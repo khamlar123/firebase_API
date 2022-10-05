@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds":[
+        {
+            "src": "./functions/index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routers":[
+        {
+            "src": "/(.*)",
+            "dest": "./functions/index.js"
+        }
+    ]
+}
